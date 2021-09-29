@@ -114,6 +114,7 @@ def train_model(model, criterion, optimizer, lr_scheduler, num_epochs):
 
     path = './cifar10_second_benchmark.pth'
     torch.save(model_best_wts, path)
+
     return model
 
 
