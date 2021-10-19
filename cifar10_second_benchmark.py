@@ -27,7 +27,7 @@ datasets = {
 dataloaders = {x: DataLoader(datasets[x], shuffle=True, batch_size=batch_size)
                for x in ['train', 'val']}
 
-datasets_sizes = {x: len(datasets[x]) for x in ['train', 'val'] for x in ['train', 'val']}
+datasets_sizes = {x: len(datasets[x]) for x in ['train', 'val']}
 class_names = datasets['train'].classes
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
